@@ -5,6 +5,7 @@ FROM alpine:latest AS builder
 
 RUN mkdir -p /loki/chunks \
     /loki/rules \
+    /loki/wal \
     /loki/tsdb-index \
     /loki/tsdb-cache \
     /loki/compactor \

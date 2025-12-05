@@ -1,8 +1,5 @@
 FROM alpine:latest AS builder
 
-
-
-
 RUN mkdir -p /loki/chunks \
     /loki/rules \
     /loki/wal \
@@ -13,7 +10,6 @@ RUN mkdir -p /loki/chunks \
     /loki/boltdb-shipper-active \
     && chown -R 10001:10001 /loki \
     && chmod -R 755 /loki
-
 
 FROM grafana/loki:latest
 

@@ -9,6 +9,7 @@ RUN mkdir -p /loki/chunks \
     /loki/tsdb-cache \
     /loki/compactor \
     /loki/boltdb-shipper-cache \
+    /loki/boltdb-shipper-active \
     && chown -R 10001:10001 /loki \
     && chmod -R 755 /loki
 

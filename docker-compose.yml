@@ -2,7 +2,8 @@ networks:
   loki:
 services:
   loki:
-    image: grafana/loki:latest
+#    image: grafana/loki:latest
+    build: ./loki
     volumes:
       - ./loki:/etc/loki
       - loki-data:/loki

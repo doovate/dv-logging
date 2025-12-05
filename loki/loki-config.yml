@@ -42,5 +42,10 @@ compactor:
   working_directory: /loki/compactor
   compaction_interval: 10m
 
+ingester:
+  wal:
+    enabled: true
+    dir: /loki/wal
+
 ruler:
   alertmanager_url: http://localhost:9093
